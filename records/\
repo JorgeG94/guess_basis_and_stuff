@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include <H5Cpp.h>
+
+using namespace H5;
+
+int main() {
+  
+  //-- go into primary atom-basis set pair group --//
+  H5File file("bsed.h5", H5F_ACC_RDONLY);
+  std::string atom_basis = "O/6-31G/";
+  Group atom_basis_group = file.openGroup(atom_basis);
+
+  //-- loop over shells in atom-basis set pair --//
+  for (int shell = 1; shell <= atom_basis_group.getNumObjs(); ++shell) {
+    //-- go into shell group --//
+    std::string shell_str = std::to_string(shell); 
+    Group shell_group = atom_basis_group.openGroup(shell_str);
+
+    //-- create dataset for shell exponents --// 
+    DataSet shell_exponents = shell_group.openDataSet("Exponents");
+
+    //-- define dataspace for shell exponents--//
+    DataSpace exp_dataspace = shell_exponents.getSpace();
+    hsize_t num_exponents = 0;
+    exp_dataspace.getSimpleExtentDims(&num_exponents, NULL);
+    std::cout << num_exponents << std::endl;
+
+    //-- get memory space --//
+    //DataSpace memspace( RANK_OUT, dimsm );
+
+    //-- read from data set --//
+    std::vector<double> shell_exponent_buf(num_exponents, 0.0);
+    //shell_exponents.read(shell_exponent_buf.data(), H5T_IEEE_F64LE);
+    // std::cout << shell_exp[0] << std::endl;
+  }
+  return 0;
+}
