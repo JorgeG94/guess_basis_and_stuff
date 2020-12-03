@@ -26,24 +26,30 @@ int main() {
             << std::endl;
 
   std::string atom_basis_pair = atom + "/" + basis;
-  H5::DataSet pair_dataset = file.openDataSet(atom_basis_pair);
+  
+  H5::DataSet guess_dataset = file.openDataSet(atom_basis_pair);
 
-  H5::DataSpace pair_dataspace = pair_dataset.getSpace();
-  hsize_t num_elements;
-  int pair_rank = pair_dataspace.getSimpleExtentDims(&num_elements, NULL);
-  std::cout << pair_rank << ": " << num_elements << std::endl;
+  H5::DataSpace guess_dataspace = guess_dataset.getSpace();
+  hsize_t guess_num_elements;
+  int guess_rank = guess_dataspace.getSimpleExtentDims(&guess_num_elements, NULL);
+  std::cout << guess_rank << ": " << guess_num_elements << std::endl;
 
   //-- read from data set --//
-  std::vector<double> density_buf(num_elements, 0.0);
-  pair_dataset.read(density_buf.data(), H5::PredType::NATIVE_DOUBLE);
+  std::vector<double> guess_buf(guess_num_elements, 0.0);
+  guess_dataset.read(guess_buf.data(), H5::PredType::NATIVE_DOUBLE);
 
   //-- print results --//
   std::cout << "ATOM " << atom << " / BASIS SET " << basis
-              << " PAIR DENSITY:" << std::endl
+              << " SAD GUESS:" << std::endl
+              << "-----------------------------------------------------"
+              << std::endl 
               << "-----------------------------------------------------"
               << std::endl;
-  for (int idx = 0; idx != num_elements; ++idx) {
-    std::cout << density_buf[idx] << std::endl; 
+  std::cout << "ELEMENT     |     GUESS     " << std::endl; 
+  std::cout << "-------     |     -----     " << std::endl; 
+ 
+  for (int idx = 0; idx != guess_num_elements; ++idx) {
+    std::cout << idx << "     |     " << guess_buf.at(idx) << std::endl; 
   }
   std::cout << std::endl;
   return 0;
