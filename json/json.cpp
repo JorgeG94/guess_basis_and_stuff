@@ -55,7 +55,19 @@ int main() {
   for (nlohmann::json::iterator it = scf.begin(); it != scf.end(); ++it) { 
     std::cout << it.key() << " => " << it.value() << std::endl; 
   } 
+
+  //-- check for nonexistant keyword --//
+  nlohmann::json::iterator ngpus_it = scf.find("ngpus");
+  if (ngpus_it != scf.end()) {
+    std::cout << ngpus_it.key() << " => " << ngpus_it.value() << std::endl; 
+  } else {
+    std::cout << "Keywords ngpus does not exist!" << std::endl; 
+  }
   std::cout << std::endl;
+
+  //-- specify empty json --//
+  nlohmann::json empty_json = {};
+  std::cout << empty_json.empty() << std::endl; 
   
   //-- we are done! --//
   return 0;
