@@ -132,3 +132,57 @@ HF: DIIS                            :      6.867u      0.250s      4.202w   9258
 HF: Form C                          :      1.400u      0.083s      0.876w   9258 calls
 
 **************************************************************************************
+
+Host: bolt.iprt.iastate.edu
+
+Timers On : Tue Dec 15 11:59:34 2020
+Timers Off: Tue Dec 15 12:03:27 2020
+
+Wall Time:      232.76 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+Total PK formation time             :     56.617u      0.200s     34.103w    754 calls
+HF: Form core H                     :      0.267u      0.050s      0.225w    754 calls
+HF: Form S/X                        :      0.133u      0.017s      0.092w    754 calls
+HF: Guess                           :    108.717u      0.600s     65.621w    754 calls
+SAD Guess                           :     97.017u      0.283s     58.356w    754 calls
+HF: Form G                          :      6.217u      0.200s      3.852w  12486 calls
+JK: D                               :      0.150u      0.033s      0.071w  12486 calls
+JK: USO2AO                          :      0.100u      0.017s      0.043w  12486 calls
+JK: JK                              :      5.417u      0.117s      3.407w  12486 calls
+PK computes JK                      :      5.383u      0.117s      3.391w  12486 calls
+JK: AO2USO                          :      0.017u      0.000s      0.008w  12486 calls
+HF: Form F                          :      0.167u      0.000s      0.080w  12486 calls
+HF: Form D                          :      0.167u      0.000s      0.104w  12486 calls
+HF: DIIS                            :      8.933u      0.300s      5.613w  11732 calls
+DIISManager::add_entry              :      0.667u      0.017s      0.458w  11732 calls
+DIISManager::extrapolate            :      1.950u      0.133s      1.215w  11732 calls
+bMatrix setup                       :      0.750u      0.050s      0.478w  11732 calls
+bMatrix pseudoinverse               :      0.667u      0.050s      0.294w  11732 calls
+New vector                          :      0.517u      0.033s      0.395w  11732 calls
+HF: Form C                          :      3.050u      0.333s      2.105w  11732 calls
+
+--------------------------------------------------------------------------------------
+Total PK formation time             :     56.617u      0.200s     34.103w    754 calls
+HF: Form core H                     :      0.267u      0.050s      0.225w    754 calls
+HF: Form S/X                        :      0.133u      0.017s      0.092w    754 calls
+HF: Guess                           :    108.717u      0.600s     65.621w    754 calls
+| SAD Guess                         :     97.017u      0.283s     58.356w    754 calls
+HF: Form G                          :      6.217u      0.200s      3.852w  12486 calls
+| JK: D                             :      0.150u      0.033s      0.071w  12486 calls
+| JK: USO2AO                        :      0.100u      0.017s      0.043w  12486 calls
+| JK: JK                            :      5.417u      0.117s      3.407w  12486 calls
+| | PK computes JK                  :      5.383u      0.117s      3.391w  12486 calls
+| JK: AO2USO                        :      0.017u      0.000s      0.008w  12486 calls
+HF: Form F                          :      0.167u      0.000s      0.080w  12486 calls
+HF: Form D                          :      0.167u      0.000s      0.104w  12486 calls
+HF: DIIS                            :      8.933u      0.300s      5.613w  11732 calls
+| DIISManager::add_entry            :      0.667u      0.017s      0.458w  11732 calls
+| DIISManager::extrapolate          :      1.950u      0.133s      1.215w  11732 calls
+| | bMatrix setup                   :      0.750u      0.050s      0.478w  11732 calls
+| | bMatrix pseudoinverse           :      0.667u      0.050s      0.294w  11732 calls
+| | New vector                      :      0.517u      0.033s      0.395w  11732 calls
+HF: Form C                          :      3.050u      0.333s      2.105w  11732 calls
+
+**************************************************************************************
