@@ -1,4 +1,5 @@
 #include <array>
+#include <cmath>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -32,6 +33,8 @@ int main() {
   H5::DataSpace guess_dataspace = guess_dataset.getSpace();
   hsize_t guess_num_elements;
   int guess_rank = guess_dataspace.getSimpleExtentDims(&guess_num_elements, NULL);
+  int nbas = floor(std::sqrt(guess_num_elements));
+
   std::cout << guess_rank << ": " << guess_num_elements << std::endl;
 
   //-- read from data set --//
@@ -48,9 +51,11 @@ int main() {
   std::cout << "ELEMENT     |     GUESS     " << std::endl; 
   std::cout << "-------     |     -----     " << std::endl; 
  
-  for (int idx = 0; idx != guess_num_elements; ++idx) {
-    std::cout << idx << "     |     " << guess_buf.at(idx) << std::endl; 
-  }
+  for (int i = 0, idx = 0; i != nbas; ++i) {
+    for (int j = 0; j != nbas; ++j, ++idx) {
+      std::cout << i << "   " << j << "   |     " << guess_buf.at(idx) << std::endl; 
+    }
+  }   
   std::cout << std::endl;
   return 0;
 }
