@@ -17,7 +17,7 @@ int main() {
   //-- change atom/basis set pair here --//
   //-------------------------------------//
   std::string atom = "O";
-  std::string basis = "6-31G";
+  std::string basis = "PCSeg-0";
 
   //-- go into primary atom-basis set pair group --//
   H5::H5File file("sadgss.h5", H5F_ACC_RDONLY);

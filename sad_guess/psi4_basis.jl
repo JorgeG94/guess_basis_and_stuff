@@ -57,8 +57,11 @@ status_bsed = h5open("../records/bsed.h5","r") do bsed
 end
 
 for basis in basis_list
-  bs_psi4 = bse.get_basis(basis,fmt="psi4", header=false)
   
+  bs_psi4 = bse.get_basis(basis,fmt="psi4", header=false)
+  bs_psi4 = replace(bs_psi4, "D+" => "E+")       
+  bs_psi4 = replace(bs_psi4, "D-" => "E-")       
+ 
   bs_name = basis
   bs_name = replace(bs_name, "*" => "s")       
   bs_name = replace(bs_name, "+" => "p")       

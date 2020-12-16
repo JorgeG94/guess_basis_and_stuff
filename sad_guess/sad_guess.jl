@@ -4,7 +4,7 @@ psi4 = pyimport("psi4")
 bse = pyimport("basis_set_exchange")
 
 using HDF5
-using MPI
+#using MPI
 
 #== psi4 setup ==# 
 psi4.set_memory("500 MB")
@@ -13,11 +13,11 @@ psi4.core.set_output_file("sad_guess.dat")
 #===============#
 #== MPI setup ==#
 #===============#
-MPI.Init()
-comm = MPI.COMM_WORLD
+#MPI.Init()
+#comm = MPI.COMM_WORLD
 
-mpi_rank = MPI.Comm_rank(comm)
-mpi_size = MPI.Comm_size(comm)
+#mpi_rank = MPI.Comm_rank(comm)
+#mpi_size = MPI.Comm_size(comm)
 
 #==============================#
 #== get atom/basis set pairs ==# 
@@ -37,17 +37,17 @@ status_bsed = h5open("../records/bsed.h5","r") do bsed
 end
 
 status_sadgss = h5open("sadgss.h5","w") do sadgss
-  if mpi_rank == 0
+  #if mpi_rank == 0
     flush(sadgss)
-  end
+  #end
   
   #symbol = "O" 
   #basis = "6-31G" 
   #pair = "$symbol/$basis"
   
-  MPI.Barrier(comm)
+  #MPI.Barrier(comm)
   for (pair_idx, pair) in enumerate(pairs)
-    if mpi_rank != (pair_idx-1)%mpi_size continue end
+    #if mpi_rank != (pair_idx-1)%mpi_size continue end
 
     pair_regex = match(r"(.*)/(.*)", pair)
     symbol = pair_regex.captures[1]
@@ -82,10 +82,13 @@ status_sadgss = h5open("sadgss.h5","w") do sadgss
       
       guess = density_a .+ density_b
       write(sadgss, pair, guess[:])
-    catch
+    catch e                                                                       
+      bt = catch_backtrace()                                                      
+      msg = sprint(showerror, e, bt)                                              
+      println(msg)       
       continue
     end
   end
 end
 
-MPI.Finalize()
+#MPI.Finalize()
