@@ -142,6 +142,7 @@ function parse_all()
 
         #== parse correlation-consistent basis family ==#
         basis_sets = ["cc-pVDZ", "cc-pVTZ", "cc-pVQZ", "cc-pV5Z", "cc-pV6Z"] 
+        #=
         for basis::String in basis_sets
             println("Basis: $basis")
             bs_dict = bse.get_basis(basis,fmt="json", header=false)
@@ -152,6 +153,7 @@ function parse_all()
                 basis, bsed)
             end
         end
+        =#
     end
 end
 

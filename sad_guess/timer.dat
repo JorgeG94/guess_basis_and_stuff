@@ -242,3 +242,97 @@ HF: DIIS                            :      9.817u      1.067s      6.676w  11915
 HF: Form C                          :      5.100u      0.500s      3.306w  11915 calls
 
 **************************************************************************************
+
+Host: bolt.iprt.iastate.edu
+
+Timers On : Wed Dec 16 09:28:55 2020
+Timers Off: Wed Dec 16 09:29:03 2020
+
+Wall Time:        7.72 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: bolt.iprt.iastate.edu
+
+Timers On : Wed Dec 16 09:29:52 2020
+Timers Off: Wed Dec 16 09:30:00 2020
+
+Wall Time:        8.28 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: bolt.iprt.iastate.edu
+
+Timers On : Wed Dec 16 10:15:12 2020
+Timers Off: Wed Dec 16 10:21:06 2020
+
+Wall Time:      353.84 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+DFH: sparsity prep                  :     19.200u      0.000s     11.593w    754 calls
+DFH: initialize()                   :     44.033u      0.417s     26.575w    591 calls
+DFH: AO Construction                :      2.450u      0.000s      1.464w    591 calls
+DFH: AO-Met. Contraction            :      0.433u      0.000s      0.257w    591 calls
+HF: Form core H                     :      0.067u      0.033s      0.082w    591 calls
+HF: Form S/X                        :      0.017u      0.100s      0.055w    591 calls
+HF: Guess                           :    188.017u      0.183s    112.828w    591 calls
+SAD Guess                           :    178.283u      0.050s    106.964w    591 calls
+HF: Form G                          :    125.283u      0.200s     75.324w  10352 calls
+JK: D                               :      0.100u      0.000s      0.051w  10352 calls
+JK: USO2AO                          :      0.000u      0.000s      0.031w  10352 calls
+JK: JK                              :    124.867u      0.183s     75.025w  10352 calls
+DFH: compute_JK()                   :      4.167u      0.100s      2.553w   7316 calls
+DFH: Grabbing AOs                   :      0.000u      0.000s      0.004w   7316 calls
+DFH: compute_J                      :      1.517u      0.100s      1.052w   7316 calls
+DFH: compute_K                      :      2.550u      0.000s      1.430w   7316 calls
+JK: AO2USO                          :      0.000u      0.000s      0.006w  10352 calls
+HF: Form F                          :      0.300u      0.000s      0.269w  10352 calls
+HF: Form D                          :      0.133u      0.000s      0.068w  10352 calls
+HF: DIIS                            :      6.467u      0.150s      4.207w   9761 calls
+DIISManager::add_entry              :      0.400u      0.033s      0.302w   9761 calls
+DIISManager::extrapolate            :      1.033u      0.033s      0.622w   9761 calls
+bMatrix setup                       :      0.417u      0.000s      0.235w   9761 calls
+bMatrix pseudoinverse               :      0.333u      0.000s      0.209w   9761 calls
+New vector                          :      0.200u      0.017s      0.142w   9761 calls
+HF: Form C                          :      0.950u      0.083s      0.599w   9761 calls
+
+--------------------------------------------------------------------------------------
+DFH: sparsity prep                  :     19.200u      0.000s     11.593w    754 calls
+DFH: initialize()                   :     44.033u      0.417s     26.575w    591 calls
+| DFH: AO Construction              :      2.450u      0.000s      1.464w    591 calls
+| DFH: AO-Met. Contraction          :      0.433u      0.000s      0.257w    591 calls
+HF: Form core H                     :      0.067u      0.033s      0.082w    591 calls
+HF: Form S/X                        :      0.017u      0.100s      0.055w    591 calls
+HF: Guess                           :    188.017u      0.183s    112.828w    591 calls
+| SAD Guess                         :    178.283u      0.050s    106.964w    591 calls
+HF: Form G                          :    125.283u      0.200s     75.324w  10352 calls
+| JK: D                             :      0.100u      0.000s      0.051w  10352 calls
+| JK: USO2AO                        :      0.000u      0.000s      0.031w  10352 calls
+| JK: JK                            :    124.867u      0.183s     75.025w  10352 calls
+| | DFH: compute_JK()               :      4.167u      0.100s      2.553w   7316 calls
+| | | DFH: Grabbing AOs             :      0.000u      0.000s      0.004w   7316 calls
+| | | DFH: compute_J                :      1.517u      0.100s      1.052w   7316 calls
+| | | DFH: compute_K                :      2.550u      0.000s      1.430w   7316 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.006w  10352 calls
+HF: Form F                          :      0.300u      0.000s      0.269w  10352 calls
+HF: Form D                          :      0.133u      0.000s      0.068w  10352 calls
+HF: DIIS                            :      6.467u      0.150s      4.207w   9761 calls
+| DIISManager::add_entry            :      0.400u      0.033s      0.302w   9761 calls
+| DIISManager::extrapolate          :      1.033u      0.033s      0.622w   9761 calls
+| | bMatrix setup                   :      0.417u      0.000s      0.235w   9761 calls
+| | bMatrix pseudoinverse           :      0.333u      0.000s      0.209w   9761 calls
+| | New vector                      :      0.200u      0.017s      0.142w   9761 calls
+HF: Form C                          :      0.950u      0.083s      0.599w   9761 calls
+
+**************************************************************************************
