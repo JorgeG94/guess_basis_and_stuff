@@ -11,12 +11,12 @@
 // basis set information from JuliaChem.jl's bsed.h5 basis set      //
 // database. Coefficients will be arriving soon.                    //
 //------------------------------------------------------------------//
-int main() {
+int main(int argc, char* argv[]) {
   //-------------------------------------//
   //-- change atom/basis set pair here --//
   //-------------------------------------//
-  std::string atom = "O";
-  std::string basis = "6-31G";
+  std::string atom(argv[1]);                                                    
+  std::string basis(argv[2]);    
 
   //-- go into primary atom-basis set pair group --//
   H5::H5File file("bsed.h5", H5F_ACC_RDONLY);

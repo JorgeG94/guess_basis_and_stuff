@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
   //-------------------------------------//
   //-- change atom/basis set pair here --//
   //-------------------------------------//
-  std::string atom(argv[1]) ;
+  std::string atom(argv[1]);
   std::string basis(argv[2]);
 
   //-- go into primary atom-basis set pair group --//
