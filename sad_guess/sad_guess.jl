@@ -1,7 +1,6 @@
 #== import modules here ==#
 using PyCall
 psi4 = pyimport("psi4")
-bse = pyimport("basis_set_exchange")
 
 using HDF5
 #using MPI
