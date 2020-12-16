@@ -1,13 +1,8 @@
 #== import modules here ==#
 using PyCall
-psi4 = pyimport("psi4")
 bse = pyimport("basis_set_exchange")
 
 using HDF5
-
-#== psi4 setup ==# 
-psi4.set_memory("500 MB")
-psi4.core.set_output_file("sad_guess.dat")
 
 #== initialization ==#
 upper_to_lower = Dict(
