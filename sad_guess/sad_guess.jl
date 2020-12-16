@@ -45,10 +45,11 @@ status_sadgss = h5open("sadgss.h5","w") do sadgss
       """)
       
       options = Dict(
-        "REFERENCE" => "UHF",
+        "REFERENCE" => "ROHF",
         "BASIS" => basis, 
-        "SCF_TYPE"  => "PK",
+        "SCF_TYPE"  => "DIRECT",
         "GUESS" => "SAD",
+        "SAD_SCF_TYPE" => "DIRECT",
         "E_CONVERGENCE" => 1e-10,
         "D_CONVERGENCE" => 1e-10,
         #"MAXITER" => 1,
