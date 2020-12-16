@@ -1,6 +1,7 @@
 #== import modules here ==#
 using PyCall
 psi4 = pyimport("psi4")
+bse = pyimport("basis_set_exchange")
 
 using HDF5
 using MPI
@@ -63,9 +64,9 @@ status_sadgss = h5open("sadgss.h5","w") do sadgss
       options = Dict(
         "REFERENCE" => "ROHF",
         "BASIS" => basis, 
-        "SCF_TYPE"  => "DIRECT",
-        "GUESS" => "SAD",
-        "SAD_SCF_TYPE" => "DIRECT",
+        "SCF_TYPE"  => "PK",
+        "GUESS" => "CORE",
+        #"SAD_SCF_TYPE" => "DIRECT",
         "E_CONVERGENCE" => 1e-10,
         "D_CONVERGENCE" => 1e-10,
         #"MAXITER" => 1,
