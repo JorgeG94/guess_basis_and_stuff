@@ -1,7 +1,7 @@
 #=============================================================================#
-#== The following is a tutorial on how you can use. this demo uses Julia's  ==#
-#== HDF5 interface, but any language that supports HDF5 can do this as      ==#
-#==  well, albeit with different syntax.                                    ==# 
+#== The following is a tutorial on how you can use the debug.h5 debug       ==#
+#== database. this demo uses Julia's HDF5 interface; but any language       ==# 
+#== that supports HDF5 can do this as well, albeit with different syntax.   ==# 
 #=============================================================================#
 
 #== first, we need to load the HDF5 interface/module ==#
@@ -22,10 +22,11 @@ using HDF5
 #==   - /Guess: the initial guess matrix                                    ==# 
 #==   - /E_nuc: the nuclear repulsion energy                                ==# 
 #==   - /H: the one-electron hamiltonian matrix                             ==#
-#==                                                                         ==#
-#==  Let's access this debug.h5's overlap matrix and print it...            ==# 
 #=============================================================================#
 
+#=============================================================================#
+#==  Let's access this debug.h5's overlap matrix and print it...            ==# 
+#=============================================================================#
 println("debug.h5 overlap matrix:")
 S_debug = h5read("debug.h5", "/RHF/Iteration-None/S")
 display(S_debug); println(); println()
@@ -48,11 +49,12 @@ display(S_debug); println(); println()
 #==     - /F/Skeleton: the "skeleton" Fock matrix                           ==# 
 #==     - /F/Total: the "total" Fock matrix, including Hcore                ==# 
 #==   - /F_evec: the eigenvectors of the total Fock matrix                  ==# 
-#==                                                                         ==#
+#=============================================================================#
+
+#=============================================================================#
 #== Let's access this debug.h5's first-iteration MO coefficients matrix     ==#
 #== and print it...                                                         ==# 
 #=============================================================================#
-
 println("debug.h5 first-iteration MO coefficients matrix:")
 C_debug = h5read("debug.h5", "/RHF/Iteration-1/C")
 display(C_debug); println(); println()
@@ -61,7 +63,6 @@ display(C_debug); println(); println()
 #== Now let's access this debug.h5's first-iteration total Fock matrix      ==#
 #== and print it...                                                         ==# 
 #=============================================================================#
-
 println("debug.h5 first-iteration total Fock matrix:")
 F_total_debug = h5read("debug.h5", "/RHF/Iteration-1/F/Total")
 display(F_total_debug); println(); println()
@@ -69,5 +70,4 @@ display(F_total_debug); println(); println()
 #=============================================================================#
 #== And that's it! If you have any questions, let me know.                  ==#
 #=============================================================================#
-
 println("READ THE COMMENTS OF THIS DEBUG.JL FILE FOR A FULL TUTORIAL!")
