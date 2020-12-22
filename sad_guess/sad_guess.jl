@@ -76,8 +76,11 @@ status_sadgss = h5open("sadgss.h5","w") do sadgss
       name = "scf/"*options["BASIS"]
       scf_e, scf_wfn = psi4.energy(name, molecule=geom, return_wfn=true)
 
-      density_a = scf_wfn.Da().array_interface()[1]
-      density_b = scf_wfn.Db().array_interface()[1]
+      #density_a = scf_wfn.Da().array_interface()[1]
+      #density_b = scf_wfn.Db().array_interface()[1]
+      
+      density_a = scf_wfn.Da().to_array()
+      density_b = scf_wfn.Db().to_array()
       
       guess = density_a .+ density_b
       write(sadgss, pair, guess[:])
