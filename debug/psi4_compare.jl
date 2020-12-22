@@ -42,7 +42,8 @@ S_psi4 = scf_wfn.S().to_array()
 debug = h5open("debug.h5", "r")
 
 tmp = debug["RHF"]["Iteration-None"]["S"][:]
-S_standalone = reshape(tmp,(Int64(sqrt(length(tmp))), Int64(sqrt(length(tmp)))))
+S_standalone = reshape(tmp,(Int64(sqrt(length(tmp))), 
+  Int64(sqrt(length(tmp)))))
 #display(S_standalone)
 
 close(debug)
@@ -53,9 +54,12 @@ diff_array = []
 
 println("Comparing Psi4 overlap to standalone overlap...")
 for i in 1:size(S_diff)[1], j in 1:size(S_diff)[2]
+  index = size(S_diff)[1]*(j-1) + i
+  @assert isapprox(S_diff[i,j], S_diff[index])
+
   if S_diff[i,j] > THRESHOLD 
-    println((i,j), ": ", S_standalone[i,j], ", ", S_psi4[i,j], ", ", 
-      S_diff[i,j])
+    println((i,j), " => ", index, ": ", S_standalone[i,j], ", ", 
+      S_psi4[i,j], ", ", S_diff[i,j])
     push!(diff_array,(i,j))
   end
 end
@@ -82,8 +86,9 @@ println("Printing values of diagonal elements...")
 #  println(index, " ", S_standalone[index], " ", S_psi4[index], " ", S_diff[index])
 #end
 
-for index in 1:size(S_diff)[1]
-  println((index,index), ": ", S_standalone[index, index], ", ", 
-    S_psi4[index, index], ", ", S_diff[index, index])
+for i in 1:size(S_diff)[1]
+  index = size(S_diff)[1]*(i-1) + i 
+  println((i,i), " => ", index,  ": ", S_standalone[i, i], ", ", 
+    S_psi4[i, i], ", ", S_diff[i, i])
 end
 println()
