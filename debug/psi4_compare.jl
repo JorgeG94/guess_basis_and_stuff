@@ -18,11 +18,12 @@ geom = psi4.geometry("
 
 options = Dict(
   "REFERENCE" => "RHF",
-  "BASIS" => "6-31G(d)", 
+  "BASIS" => "PCSeg-1", 
   "SCF_TYPE"  => "DIRECT",
   "GUESS" => "SAD",
   "SAD_SCF_TYPE" => "DIRECT",
   "DF_SCF_GUESS" => false,
+  "PUREAM" => false,
   "E_CONVERGENCE" => 1e-10,
   "D_CONVERGENCE" => 1e-10,
   "PRINT" => 4
@@ -39,10 +40,22 @@ debug = h5open("debug.h5", "r")
 
 tmp = debug["RHF"]["Iteration-None"]["S"][:]
 S_standalone = reshape(tmp,(Int64(sqrt(length(tmp))), Int64(sqrt(length(tmp)))))
+#display(S_standalone)
 
 close(debug)
 
 #== comparison ==#
 S_diff = S_standalone .- S_psi4
-display(S_diff[:])
+#display(S_standalone[:])
+for i in 1:length(S_diff)
+  if S_diff[i] > 0.00001
+    println(i," ", S_standalone[i]," ",  S_psi4[i]," ",  S_diff[i])
+  end
+end
 
+leng = Int64(sqrt(length(S_diff)))
+
+for i in 0:(leng-1)
+  index = (leng+1)*i + 1
+  println(index, " ", S_standalone[index], " ", S_psi4[index], " ", S_diff[index])
+end
