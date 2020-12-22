@@ -5,10 +5,10 @@
 #=============================================================================#
 
 #== first, we need to load the HDF5 interface/module... ==#
-using HDF5
+import h5py
 
 #== ...and open the file ==#
-debug = h5open("debug.h5", "r")
+debug = h5py.File("debug.h5", "r")
 
 #=============================================================================#
 #== The layout of information in each debug.h5 can be divided into two      ==#
@@ -30,9 +30,10 @@ debug = h5open("debug.h5", "r")
 #=============================================================================#
 #==  Let's access this debug.h5's overlap matrix and print it...            ==# 
 #=============================================================================#
-println("debug.h5 overlap matrix:")
+print("debug.h5 overlap matrix:")
 S_debug = debug["RHF"]["Iteration-None"]["S"][:]
-display(S_debug); println(); println()
+print(S_debug)
+print()
 
 #=============================================================================#
 #== Note that all matrices are stored as 1D arrays, and the full matrix     ==#
@@ -58,20 +59,22 @@ display(S_debug); println(); println()
 #== Let's access this debug.h5's first-iteration MO coefficients matrix     ==#
 #== and print it...                                                         ==# 
 #=============================================================================#
-println("debug.h5 first-iteration MO coefficients matrix:")
+print("debug.h5 first-iteration MO coefficients matrix:")
 C_debug = debug["RHF"]["Iteration-1"]["C"][:]
-display(C_debug); println(); println()
+print(C_debug)
+print()
 
 #=============================================================================#
 #== Now let's access this debug.h5's first-iteration total Fock matrix      ==#
 #== and print it...                                                         ==# 
 #=============================================================================#
-println("debug.h5 first-iteration total Fock matrix:")
+print("debug.h5 first-iteration total Fock matrix:")
 F_total_debug = debug["RHF"]["Iteration-1"]["F"]["Total"][:]
-display(F_total_debug); println(); println()
+print(F_total_debug)
+print()
 
 #=============================================================================#
 #== And that's it! If you have any questions, let me know.                  ==#
 #=============================================================================#
-close(debug)
-println("READ THE COMMENTS OF THIS DEBUG.JL FILE FOR A FULL TUTORIAL!")
+debug.close()
+print("READ THE COMMENTS OF THIS DEBUG.PY FILE FOR A FULL TUTORIAL!")
