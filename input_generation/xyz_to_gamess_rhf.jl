@@ -69,13 +69,15 @@ function create_input(input)
     write(file, " \$scf dirscf=.t. damp=.t. shift=.f. \$end\n")
     write(file, "   soscf=.f. diis=.t. fdiff=.f. extrapolate=.f. \$end\n")
     write(file, " \$system mwords=500 memddi=500 \$end\n")
-    write(file, " \$intgrl schwarz=.t. intomp=1 shfock=.f. \$end\n")
+    write(file, " \$intgrl schwrz=.t. intomp=1 shfock=.f. \$end\n")
     write(file, " \$guess guess=huckel \$end\n")
     write(file, " \$contrl scftyp=rhf runtyp=energy nprint=-5\n")
     write(file, "     icharg=0 ispher=0 inttyp=eric \n")
     write(file, "     maxit=50 \$end\n")
     write(file, " \$end\n")
     write(file, " \$data\n")
+    write(file, "$(input[1:(end-4)]) \n")
+    write(file, "C1\n")
     for line in xyz_array 
       atom = line[1:2]
       newline = line[1:2]*"   $(atom_to_atomic_number_mapping[atom])   "*
