@@ -122,21 +122,22 @@ end
 
 function create_input_rhf(input)
   #== write input json file ==#
-  output = open("input.json", "w") do file
+  filename = input[1:(end-4)]
+  #display(filename)
+  output = open("$filename.json", "w") do file
     write(file, "{\n")
     #== write in molecule information ==#
     write(file, "  \"molecule\": {\n")
     #== write each fragment's molecule information ==#
-    write(file, "    \"", input, "\": {\n") 
 
     coords, symbols, charge = xyz_to_geometry(input)
     #== write fragment geometry ==#
-    write(file, "      \"geometry\" : [\n") 
+    write(file, "    \"geometry\" : [\n") 
     for icoord in 1:length(coords)
-      write(file, "        ") 
+      write(file, "      ") 
         
       value = coords[icoord]
-      println(value)
+      #println(value)
       if icoord == length(coords)
         write(file, "$value\n")
       elseif icoord%3 == 0 
@@ -145,12 +146,12 @@ function create_input_rhf(input)
         write(file, "$value,")
       end
     end
-    write(file, "      ],\n") 
+    write(file, "    ],\n") 
  
     #== write fragment symbols ==#
-    write(file, "      \"symbols\" : [\n") 
+    write(file, "    \"symbols\" : [\n") 
     for iatom in 1:length(symbols)
-      write(file, "        ") 
+      write(file, "      ") 
       symbol = symbols[iatom]
       if iatom == length(symbols)
         write(file, "\"$symbol\"\n")
@@ -160,30 +161,21 @@ function create_input_rhf(input)
         write(file, "\"$symbol\",")
       end
     end
-    write(file, "      ],\n") 
+    write(file, "    ],\n") 
     #== write fragment charge ==#
-    write(file, "      \"molecular_charge\": $charge\n") 
-    write(file, "    },\n")
+    write(file, "    \"molecular_charge\": $charge\n") 
     write(file, "  },\n")
  
     #== write calculation driver and model information ==# 
     write(file,"  \"driver\": \"energy\",\n")
     write(file,"  \"model\": {\n")
     write(file,"    \"method\": \"RHF\",\n")
-    write(file,"    \"basis\": \"6-31G\"\n")
+    write(file,"    \"basis\": \"6-31++G(2d,2p)\"\n")
     write(file,"  },\n")
     
     #== write keywords ==# 
     write(file,"  \"keywords\": {\n")
     write(file,"    \"scf\": {\n")
-    write(file,"      \"niter\":100,\n")
-    write(file,"      \"ndiis\":8,\n")
-    write(file,"      \"dele\":1E-10,\n")
-    write(file,"      \"rmsd\":1E-8,\n")
-    write(file,"      \"prec\":\"Float64\",\n")
-    write(file,"      \"direct\":true,\n")
-    write(file,"      \"debug\":false,\n")
-    write(file,"      \"load\":\"static\"\n")
     write(file,"    }\n")
     write(file,"  }\n")
     write(file,"}")

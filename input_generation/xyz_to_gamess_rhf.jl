@@ -1,29 +1,31 @@
 include("gamess_custom_basis_sets/631+gd_split.jl")
+include("gamess_custom_basis_sets/6311++g2d2p_split.jl")
+include("gamess_custom_basis_sets/6311++gdp-J.jl")
 
 const atom_to_atomic_number_mapping = Dict(
-  "H " => 1.0,
+  "H" => 1.0,
   "He" => 2.0,
   "Li" => 3.0,
   "Be" => 4.0,
-  "B " => 5.0,
-  "C " => 6.0,
-  "N " => 7.0,
-  "O " => 8.0,
-  "F " => 9.0,
+  "B" => 5.0,
+  "C" => 6.0,
+  "N" => 7.0,
+  "O" => 8.0,
+  "F" => 9.0,
   "Ne" => 10.0,
   "Na" => 11.0,
   "Mg" => 12.0,
   "Al" => 13.0,
   "Si" => 14.0,
-  "P " => 15.0,
-  "S " => 16.0,
+  "P" => 15.0,
+  "S" => 16.0,
   "Cl" => 17.0,
   "Ar" => 18.0,
-  "K " => 19.0,
+  "K" => 19.0,
   "Ca" => 20.0,
   "Sc" => 21.0,
   "Ti" => 22.0,
-  "V " => 23.0,
+  "V" => 23.0,
   "Cr" => 24.0,
   "Mn" => 25.0,
   "Fe" => 26.0,
@@ -39,7 +41,7 @@ const atom_to_atomic_number_mapping = Dict(
   "Kr" => 36.0,
   "Rb" => 37.0,
   "Sr" => 38.0,
-  "Y " => 39.0,
+  "Y" => 39.0,
   "Zr" => 40.0,
   "Nb" => 41.0,
   "Mo" => 42.0,
@@ -53,7 +55,7 @@ const atom_to_atomic_number_mapping = Dict(
   "Sn" => 50.0,
   "Sb" => 51.0,
   "Te" => 52.0,
-  "I " => 53.0,
+  "I" => 53.0,
   "Xe" => 54.0
 )
 
@@ -76,19 +78,20 @@ function create_input(input)
     write(file, "     maxit=50 \$end\n")
     write(file, " \$end\n")
     write(file, " \$data\n")
-    write(file, "$(input[1:(end-4)]) \n")
+    write(file, "$(splitdir(input[1:(end-4)])[end]) \n")
     write(file, "C1\n")
     for line in xyz_array 
-      atom = line[1:2]
+      atom = rstrip(line[1:2])
       newline = line[1:2]*"   $(atom_to_atomic_number_mapping[atom])   "*
         line[3:end]
       write(file, "$newline\n")
-      
-      newline = six_three_one_plus_g_d_split[atom]
+
+
+      #newline = six_three_one_one_2plus_2d_2p_split[atom]     
+      newline = six_three_one_one_2plus_d_p_J[atom]
+      #newline = six_three_one_plus_g_d_split[atom]
       write(file, "$newline\n")
     end
     write(file, " \$end\n")
   end 
 end
-
-create_input(ARGS[1])
