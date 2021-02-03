@@ -68,14 +68,14 @@ function create_input(input)
   natoms = length(xyz_array)
 
   output = open(joinpath(@__DIR__, input[1:(end-4)]*".inp"), "w") do file
-    write(file, " \$scf dirscf=.t. damp=.t. shift=.f. \$end\n")
-    write(file, "   soscf=.f. diis=.t. fdiff=.f. extrapolate=.f. \$end\n")
+    write(file, " \$scf dirscf=.t. damp=.t. shift=.f.\n")
+    write(file, "   soscf=.f. diis=.t. fdiff=.f. extrap=.f. \$end\n")
     write(file, " \$system mwords=500 memddi=500 \$end\n")
     write(file, " \$intgrl schwrz=.t. intomp=1 shfock=.f. \$end\n")
-    write(file, " \$guess guess=huckel \$end\n")
+    write(file, " \$guess guess=hcore \$end\n")
     write(file, " \$contrl scftyp=rhf runtyp=energy nprint=-5\n")
     write(file, "     icharg=0 ispher=0 inttyp=eric \n")
-    write(file, "     maxit=50 \$end\n")
+    write(file, "     maxit=100 \$end\n")
     write(file, " \$end\n")
     write(file, " \$data\n")
     write(file, "$(splitdir(input[1:(end-4)])[end]) \n")
@@ -86,9 +86,8 @@ function create_input(input)
         line[3:end]
       write(file, "$newline\n")
 
-
-      #newline = six_three_one_one_2plus_2d_2p_split[atom]     
-      newline = six_three_one_one_2plus_d_p_J[atom]
+      newline = six_three_one_one_2plus_2d_2p_split[atom]     
+      #newline = six_three_one_one_2plus_d_p_J[atom]
       #newline = six_three_one_plus_g_d_split[atom]
       write(file, "$newline\n")
     end
