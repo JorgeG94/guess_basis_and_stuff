@@ -87,7 +87,10 @@ function parse_individual_cc(atom::Dict{String,Any}, atomid::String, basis::Stri
   #println("angmom string = ", shell_type_string)
   
   exponents::Array{Float64,1} = parse.(Float64,shell["exponents"])
-
+  exp_cc = Array{Float64,1}(undef,1)
+  exp_cc[1] = exponents[num_exps]
+  coeff_cc = Array{Float64,1}(undef,1)
+  coeff_cc[1] = 1.000000
   # loop over the number of coefficients in the array
   for coefid in 1:num_coefs
 
@@ -100,23 +103,29 @@ function parse_individual_cc(atom::Dict{String,Any}, atomid::String, basis::Stri
     #println(count(i->(i == 1.0),coeff))
     #println( findfirst(i->(i==1.0), coeff) )
 
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
+    #h5write("bsed.h5",
+    #  "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
     #println(shell_num)
-    shell_num += 1
-    shell_num_offset += 1
+    #shell_num += 1
+    #shell_num_offset += 1
     # for pvdz it is always the last one
     if coefid == num_coefs
     h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Exponents", exponents[num_exps])
+      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
     h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Coefficients", 1.000000E+00)
+      "$atomid/$basis/$shell_num/Exponents", exp_cc)
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Coefficients", coeff_cc)
     else
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
     h5write("bsed.h5",
       "$atomid/$basis/$shell_num/Exponents", exponents)
     h5write("bsed.h5",
       "$atomid/$basis/$shell_num/Coefficients", coeff)
     end #if
+    shell_num += 1
+    shell_num_offset += 1
 
   end #for coeffs 
   shell_num_offset -= 1
