@@ -58,6 +58,82 @@ function parse_individual(atom::Dict{String,Any}, atomid::String, basis::String,
   end
 end
 
+
+#===========================================================#
+#= perform parsing operation on single atom/basis set pair =#
+#===========================================================#
+function parse_individual_cc(atom::Dict{String,Any}, atomid::String, basis::String, 
+  bsed::HDF5File)
+
+  #println("atom ", atomid)
+  #println( "electron shells ",size(atom["electron_shells"],1))
+  #if atomid == "O"
+  shell_num_offset = 0
+  # loop over the shells
+  for (shell_num, shell) in enumerate(atom["electron_shells"])
+  shell_num += shell_num_offset
+  #println("shell_num ", shell_num)
+  #println(" coef size ", size(shell["coefficients"],1) )
+
+  #get numer of coefficents 
+  num_coefs = size( shell["coefficients"],1)
+  num_exps = size( shell["exponents"],1)
+
+  ang_mom = shell["angular_momentum"]
+
+  shell_type_string = am_to_shell_mapping[ang_mom[1]]
+
+  #println("angular momentum = ", ang_mom[1])
+  #println("angmom string = ", shell_type_string)
+  
+  exponents::Array{Float64,1} = parse.(Float64,shell["exponents"])
+  exp_cc = Array{Float64,1}(undef,1)
+  exp_cc[1] = exponents[num_exps]
+  coeff_cc = Array{Float64,1}(undef,1)
+  coeff_cc[1] = 1.000000
+  # loop over the number of coefficients in the array
+  for coefid in 1:num_coefs
+
+
+      coeff::Array{Float64} = begin
+      parse.(Float64,shell["coefficients"][coefid])
+    
+    end #coef array
+    #println("subshell id = ", coefid)
+    #println(count(i->(i == 1.0),coeff))
+    #println( findfirst(i->(i==1.0), coeff) )
+
+    #h5write("bsed.h5",
+    #  "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
+    #println(shell_num)
+    #shell_num += 1
+    #shell_num_offset += 1
+    # for pvdz it is always the last one
+    if coefid == num_coefs
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Exponents", exp_cc)
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Coefficients", coeff_cc)
+    else
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Exponents", exponents)
+    h5write("bsed.h5",
+      "$atomid/$basis/$shell_num/Coefficients", coeff)
+    end #if
+    shell_num += 1
+    shell_num_offset += 1
+
+  end #for coeffs 
+  shell_num_offset -= 1
+
+  end #for shells
+  #end # if
+end #function
+
 #===========================================#
 #= parse all selected atom-basis set pairs =#
 #===========================================#
@@ -140,20 +216,33 @@ function parse_all()
             end
         end
 
-        #== parse correlation-consistent basis family ==#
-        basis_sets = ["cc-pVDZ", "cc-pVTZ", "cc-pVQZ", "cc-pV5Z", "cc-pV6Z"] 
-        #=
+        #== parse RI basis family ==#
+        basis_sets = ["cc-pVDZ-RIFIT", "aug-cc-pVDZ-RIFIT", "cc-pVTZ-RIFIT", "aug-cc-pVTZ-RIFIT"] # RIFIT family
         for basis::String in basis_sets
             println("Basis: $basis")
             bs_dict = bse.get_basis(basis,fmt="json", header=false)
             bs_dict_json = JSON.parse(bs_dict)
 
             for atom in bs_dict_json["elements"] 
-              parse_individual(atom.second, atoms[parse(Int64,atom.first)], 
+                parse_individual(atom.second, atoms[parse(Int64,atom.first)], 
+                  basis, bsed)
+            end
+        end
+
+        #== parse correlation-consistent basis family ==#
+        basis_sets = ["cc-pVDZ"] 
+        
+        for basis::String in basis_sets
+            println("Basis: $basis")
+            bs_dict = bse.get_basis(basis,fmt="json", header=false)
+            bs_dict_json = JSON.parse(bs_dict)
+
+            for atom in bs_dict_json["elements"] 
+              parse_individual_cc(atom.second, atoms[parse(Int64,atom.first)], 
                 basis, bsed)
             end
         end
-        =#
+        
     end
 end
 
