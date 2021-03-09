@@ -1,0 +1,4479 @@
+HDF5 "eatom.h5" {
+GROUP "/" {
+   GROUP "RHF" {
+      GROUP "Ag" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5173.81
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5028.31
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5149.63
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5168.67
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5172.57
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5174.55
+            }
+         }
+      }
+      GROUP "Al" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -240.551
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.853
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.854
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.854
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.87
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.854
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.855
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.575
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.85
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -241.869
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -232.098
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -238.858
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -240.334
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -240.703
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -240.813
+            }
+         }
+      }
+      GROUP "Ar" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -524.343
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.76
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.773
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.775
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.775
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.773
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.775
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.775
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.808
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.772
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.773
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.775
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.774
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.774
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.774
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.156
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.76
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -526.807
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -507.249
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -521.223
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -524.111
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -524.832
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -525.054
+            }
+         }
+      }
+      GROUP "As" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2223.36
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2234.06
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2234.07
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2234.07
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2234.07
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2233.77
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2233.82
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2233.82
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2233.82
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2231.4
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2233.83
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2234.12
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2155.08
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2209.78
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2219.98
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2221.86
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2222.48
+            }
+         }
+      }
+      GROUP "B" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.3896
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.4871
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5167
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5235
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5236
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5236
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5235
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5236
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5236
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5273
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5274
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5273
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5271
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5268
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5269
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5269
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5269
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5269
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5193
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5211
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5228
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5194
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5194
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5194
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.4665
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5169
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.5268
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -23.3953
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.149
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.3291
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.3784
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -24.3943
+            }
+         }
+      }
+      GROUP "Be" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.4868
+            }
+         }
+         DATASET "5-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5569
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5693
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5696
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5697
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5697
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5696
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5697
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5697
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.572
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.572
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.572
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.572
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5719
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5668
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5685
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.571
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5669
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5669
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5669
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5361
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5647
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5713
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -13.8902
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.3519
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.4624
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.4932
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -14.5034
+            }
+         }
+      }
+      GROUP "Br" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2560.04
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.32
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.35
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.35
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.35
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.04
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.08
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.08
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.08
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2569.38
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.09
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2572.41
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2482.98
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2545.5
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2556.82
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2558.89
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2559.68
+            }
+         }
+      }
+      GROUP "C" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.3914
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5446
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5694
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5942
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5944
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5944
+            }
+         }
+         DATASET "6-31++G**-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5992
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5942
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5944
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5944
+            }
+         }
+         DATASET "6-31+G*-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5992
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6003
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6009
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6019
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6004
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6004
+            }
+         }
+         DATASET "6-311++G**-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6009
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6003
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6009
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6004
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6004
+            }
+         }
+         DATASET "6-311+G*-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6009
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5986
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5999
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5988
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5988
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5988
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5882
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5911
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5922
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5886
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5886
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5886
+            }
+         }
+         DATASET "6-31G-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.593
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5021
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.5833
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.6016
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -35.949
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.0896
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.3665
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.4403
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -37.4635
+            }
+         }
+      }
+      GROUP "Ca" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -673.406
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.741
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.709
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.709
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.709
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.709
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -675.386
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.653
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -676.744
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -652.554
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -669.989
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -673.451
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -674.306
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -674.571
+            }
+         }
+      }
+      GROUP "Cd" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5440.19
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5287.56
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5414.81
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5434.65
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5438.77
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5440.87
+            }
+         }
+      }
+      GROUP "Cl" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -457.276
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -458.972
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.433
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.444
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.445
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.445
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.444
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.445
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.445
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.47
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.472
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.474
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.471
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.471
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.47
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.472
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.471
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.471
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.469
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.47
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.47
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.47
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.443
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.445
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.446
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.444
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.444
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.444
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -458.907
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.432
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -459.474
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -442.209
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -454.542
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -457.113
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -457.754
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -457.95
+            }
+         }
+      }
+      GROUP "Co" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1374.33
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1380.94
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1381.07
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1381.07
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1381.07
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1378.2
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1381.03
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1381.23
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1331.98
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1366.31
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1372.96
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1374.59
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1375.1
+            }
+         }
+      }
+      GROUP "Cr" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1032.14
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1042.98
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1036.71
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1036.7
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1036.71
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1040.94
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1042.77
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1042.97
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1006.02
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1032.25
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1037.14
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1038.6
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1038.99
+            }
+         }
+      }
+      GROUP "Cs" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7530.54
+            }
+         }
+      }
+      GROUP "Cu" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1630.72
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.57
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.57
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.57
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.57
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1635.31
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.71
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1638.94
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1579.8
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1613.24
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1628.19
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1630.13
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1630.74
+            }
+         }
+      }
+      GROUP "F" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -98.8446
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.2649
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.23
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3667
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3684
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3684
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3667
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3684
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3684
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3963
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3976
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3995
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3964
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3964
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3963
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3976
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3964
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3964
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3934
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3956
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3934
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3934
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3934
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3602
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3634
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3649
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3618
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3618
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3618
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.0845
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.3381
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -99.4038
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -95.0151
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -97.9865
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -98.6817
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -98.8597
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -98.9133
+            }
+         }
+      }
+      GROUP "Fe" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1242.18
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1262.08
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1262.08
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1262.08
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1262.08
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1259.23
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1261.87
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1262.06
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1217.16
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1248.45
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1254.75
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1256.25
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1256.72
+            }
+         }
+      }
+      GROUP "Ga" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1913.82
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1923.17
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1923.18
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1923.18
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1923.18
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1922.9
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1922.94
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1922.94
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1922.94
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1920.8
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1922.97
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1923.23
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1853.61
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1901.14
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1910.28
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1912
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1912.48
+            }
+         }
+      }
+      GROUP "Ge" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2065.25
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075.21
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075.22
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075.22
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075.22
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2074.93
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2074.98
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2074.98
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2074.98
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2072.7
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2075.27
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2001.07
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2052.08
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2061.74
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2063.53
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2064.08
+            }
+         }
+      }
+      GROUP "H" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.496199
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "5-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.496199
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.496199
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498801
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498801
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498801
+            }
+         }
+         DATASET "6-31++G**-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49958
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31+G*-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498825
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499818
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499818
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499818
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499818
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499818
+            }
+         }
+         DATASET "6-311++G**-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499889
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311+G*-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49988
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49981
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498504
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498233
+            }
+         }
+         DATASET "6-31G-J" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.498825
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.496354
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.49859
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.499902
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.454397
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.466582
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.469806
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.470743
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -0.471039
+            }
+         }
+      }
+      GROUP "He" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.83568
+            }
+         }
+         DATASET "4-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "5-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.83568
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.83568
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85565
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85565
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85565
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.8599
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85518
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85516
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.83405
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.85324
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.86098
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.70216
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.80778
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.83573
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.84377
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2.84629
+            }
+         }
+      }
+      GROUP "I" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6887.84
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6916.77
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6916.83
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6916.83
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6916.83
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6695.9
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6854.51
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6879.78
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6883.87
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -6889.01
+            }
+         }
+      }
+      GROUP "In" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5715.08
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5552.91
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5685.83
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5707.62
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5710.93
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -5714.35
+            }
+         }
+      }
+      GROUP "K" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -596.153
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.15
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.15
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.15
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.149
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.12
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.12
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.12
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.12
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -597.935
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.07
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -599.151
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -577.502
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -593.077
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -596.201
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -596.97
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -597.207
+            }
+         }
+      }
+      GROUP "Kr" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2739.2
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.95
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.96
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.96
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.96
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.64
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.68
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.68
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.68
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2748.83
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2751.68
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2752.03
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2657.06
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2723.71
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2735.6
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2737.78
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -2738.66
+            }
+         }
+      }
+      GROUP "Li" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.38151
+            }
+         }
+         DATASET "5-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.42846
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43063
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43147
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43156
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43156
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43147
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43156
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43156
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43201
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43208
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43214
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43211
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43211
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43201
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43208
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43211
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43211
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43201
+            }
+         }
+         DATASET "6-311G(2df,2pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43208
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.4321
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.4321
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.4321
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43123
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43131
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43167
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43137
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43137
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43137
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.41487
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.42741
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.43092
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.07082
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.31553
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.37684
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.39428
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -7.39993
+            }
+         }
+      }
+      GROUP "Mg" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -198.468
+            }
+         }
+         DATASET "6-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.595
+            }
+         }
+         DATASET "6-31++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.595
+            }
+         }
+         DATASET "6-31++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.595
+            }
+         }
+         DATASET "6-31+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-311++G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311++G(2d,2p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311++G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311++G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311++G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311+G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311+G(2d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311+G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311+G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-311G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.607
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.595
+            }
+         }
+         DATASET "6-31G(2df,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31G(3df,3pd)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.596
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.341
+            }
+         }
+         DATASET "PCSeg-1" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.584
+            }
+         }
+         DATASET "PCSeg-2" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -199.604
+            }
+         }
+         DATASET "STO-2G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -191.442
+            }
+         }
+         DATASET "STO-3G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -197.007
+            }
+         }
+         DATASET "STO-4G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -198.26
+            }
+         }
+         DATASET "STO-5G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -198.568
+            }
+         }
+         DATASET "STO-6G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -198.66
+            }
+         }
+      }
+      GROUP "Mn" {
+         DATASET "3-21G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1134.5
+            }
+         }
+         DATASET "6-31G" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1149.47
+            }
+         }
+         DATASET "6-31G(d,p)" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1149.36
+            }
+         }
+         DATASET "6-31G*" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1148.55
+            }
+         }
+         DATASET "6-31G**" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1148.55
+            }
+         }
+         DATASET "PCSeg-0" {
+            DATATYPE  H5T_IEEE_F64LE
+            DATASPACE  SCALAR
+            DATA {
+            (0): -1147.1
+            }
+         }
+      }
+   }
+}
+}
