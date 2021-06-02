@@ -64,9 +64,7 @@ end
 function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::String, 
   bsed::HDF5File)
 
-  if atomid == "C"
-  println("atom ", atomid)
-  println( "electron shells ",size(atom["electron_shells"],1))
+  #if atomid == "O"
   
   # loop over the shells
   shell_num = 1
@@ -89,10 +87,8 @@ function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::
     for icoef in shell["coefficients"] 
       coeff::Vector{Float64} = parse.(Float64,icoef)
       #display(coeff); println()
-      #println("subshell id = ", coefid)
       push!(coeffs, coeff)
       push!(coefs_01, findfirst(i->(i == 1.0),coeff))
-      #println( findfirst(i->(i==1.0), coeff) )
     end
     
     #display(coefs_01); println()
@@ -109,16 +105,16 @@ function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::
     exps_to_remove::Vector{Vector{Float64}} = [] 
     for iexp_cc in exp_cc, idx in idx_to_remove
       push!(exps_to_remove, [ iexp_cc[coefs_01[idx]]])
-      deleteat!(iexp_cc, coefs_01[idx])
-      #display(iexp_cc); println()
-      #display(exps_to_remove); println()
+      iexp_cc[coefs_01[idx]] = 0.0
     end 
     for iexp in exps_to_remove
       push!(exp_cc, iexp)
     end
+    for iexp_cc in exp_cc
+      filter!(x->x!=0.0, iexp_cc)
+    end 
     filter!(!isempty, exp_cc)
     #display(exp_cc); println()
-    #display(exps_to_remove); println()
  
     #println()
     #println("#== COEFFICIENTS ==#")   
@@ -127,36 +123,36 @@ function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::
     for (coef_idx, icoef_cc) in enumerate(coeff_cc), idx in idx_to_remove
       if typeof(coefs_01[coef_idx]) == Nothing 
         push!(coeffs_to_remove, [ icoef_cc[coefs_01[idx]] ])
-        deleteat!(icoef_cc, coefs_01[idx])
-      elseif typeof(coefs_01[coef_idx]) == Int64 
-        filter!(x->x==1.0, icoef_cc)
+        icoef_cc[coefs_01[idx]] = 0.0
       end 
-      #display(icoef_cc); println()
-      #display(coeffs_to_remove); println()
     end 
     for icoeff in coeffs_to_remove
       push!(coeff_cc, icoeff)
     end
-    #filter!(!isempty, coeff_cc)
+    for icoeff_cc in coeff_cc
+      filter!(x->x!=0.0, icoeff_cc)
+    end 
+    filter!(!isempty, coeff_cc)
     #display(coeff_cc); println()
-    #display(coeffs_to_remove); println()
-   
-    exp_id = 1
+  
+    exp_id = typeof(coefs_01[1]) == Int64 ? 0 : 1
     for coef_id in 1:length(coefs_01) 
-      if (length(coefs_01) > 1) && (typeof(coefs_01[coef_id]) == Int64)
+      if typeof(coefs_01[coef_id]) == Int64
         exp_id += 1
       end
-
+ 
       h5write("bsed.h5",
         "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
       h5write("bsed.h5",
         "$atomid/$basis/$shell_num/Exponents", exp_cc[exp_id])
       h5write("bsed.h5",
         "$atomid/$basis/$shell_num/Coefficients", coeff_cc[coef_id])
+      
       shell_num += 1
     end #for icoef
   end #for shells
   
+  #=
   println("#==========================================#")
   println("#== FINAL LIST OF EXPONENTS/COEFFICIENTS ==#") 
   println("#==========================================#")
@@ -174,7 +170,8 @@ function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::
       "$atomid/$basis/$ishl/Coefficients"))
     println()
   end
-  end # if
+  =#
+  #end # if
 end #function
 
 #===========================================#
@@ -273,7 +270,7 @@ function parse_all()
         end
 
         #== parse correlation-consistent basis family ==#
-        basis_sets = ["cc-pVDZ"] 
+        basis_sets = ["cc-pVDZ", "cc-pVTZ"] 
         
         for basis::String in basis_sets
             println("Basis: $basis")
