@@ -58,80 +58,123 @@ function parse_individual(atom::Dict{String,Any}, atomid::String, basis::String,
   end
 end
 
-
 #===========================================================#
 #= perform parsing operation on single atom/basis set pair =#
 #===========================================================#
-function parse_individual_cc(atom::Dict{String,Any}, atomid::String, basis::String, 
+function parse_individual_cc_new(atom::Dict{String,Any}, atomid::String, basis::String, 
   bsed::HDF5File)
 
-  #println("atom ", atomid)
-  #println( "electron shells ",size(atom["electron_shells"],1))
-  #if atomid == "O"
-  shell_num_offset = 0
-  # loop over the shells
-  for (shell_num, shell) in enumerate(atom["electron_shells"])
-  shell_num += shell_num_offset
-  #println("shell_num ", shell_num)
-  #println(" coef size ", size(shell["coefficients"],1) )
-
-  #get numer of coefficents 
-  num_coefs = size( shell["coefficients"],1)
-  num_exps = size( shell["exponents"],1)
-
-  ang_mom = shell["angular_momentum"]
-
-  shell_type_string = am_to_shell_mapping[ang_mom[1]]
-
-  #println("angular momentum = ", ang_mom[1])
-  #println("angmom string = ", shell_type_string)
+  if atomid == "C"
+  println("atom ", atomid)
+  println( "electron shells ",size(atom["electron_shells"],1))
   
-  exponents::Array{Float64,1} = parse.(Float64,shell["exponents"])
-  exp_cc = Array{Float64,1}(undef,1)
-  exp_cc[1] = exponents[num_exps]
-  coeff_cc = Array{Float64,1}(undef,1)
-  coeff_cc[1] = 1.000000
-  # loop over the number of coefficients in the array
-  for coefid in 1:num_coefs
+  # loop over the shells
+  shell_num = 1
+  for shell in atom["electron_shells"]
+    ang_mom = shell["angular_momentum"]
+    shell_type_string = am_to_shell_mapping[ang_mom[1]]
 
-
-      coeff::Array{Float64} = begin
-      parse.(Float64,shell["coefficients"][coefid])
+    #println("#===============================================#")
+    #println("#== CREATE INITIAL EXPONENT/COEFFICIENT LISTS ==#")  
+    #println("#===============================================#")
+    #println()
+    #println("#== EXPONENTS ==#")
+    exponents::Vector{Float64} = parse.(Float64,shell["exponents"])
+    #display(exponents); println()
     
-    end #coef array
-    #println("subshell id = ", coefid)
-    #println(count(i->(i == 1.0),coeff))
-    #println( findfirst(i->(i==1.0), coeff) )
+    #println()
+    #println("#== COEFFICIENTS ==#")
+    coeffs::Vector{Vector{Float64}} = []
+    coefs_01::Vector{Union{Nothing,Int64}} = []
+    for icoef in shell["coefficients"] 
+      coeff::Vector{Float64} = parse.(Float64,icoef)
+      #display(coeff); println()
+      #println("subshell id = ", coefid)
+      push!(coeffs, coeff)
+      push!(coefs_01, findfirst(i->(i == 1.0),coeff))
+      #println( findfirst(i->(i==1.0), coeff) )
+    end
+    
+    #display(coefs_01); println()
 
-    #h5write("bsed.h5",
-    #  "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
-    #println(shell_num)
-    #shell_num += 1
-    #shell_num_offset += 1
-    # for pvdz it is always the last one
-    if coefid == num_coefs
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Exponents", exp_cc)
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Coefficients", coeff_cc)
-    else
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Exponents", exponents)
-    h5write("bsed.h5",
-      "$atomid/$basis/$shell_num/Coefficients", coeff)
-    end #if
-    shell_num += 1
-    shell_num_offset += 1
+    #println("#=====================================#")
+    #println("#== TRIM EXPONENT/COEFFICIENT LISTS ==#")  
+    #println("#=====================================#")
+    idx_to_remove = findall(x->typeof(x)==Int64, coefs_01)
+    #display(idx_to_remove)  
+ 
+    #println() 
+    #println("#== EXPONENTS ==#")
+    exp_cc::Vector{Vector{Float64}} = [ deepcopy(exponents) ] 
+    exps_to_remove::Vector{Vector{Float64}} = [] 
+    for iexp_cc in exp_cc, idx in idx_to_remove
+      push!(exps_to_remove, [ iexp_cc[coefs_01[idx]]])
+      deleteat!(iexp_cc, coefs_01[idx])
+      #display(iexp_cc); println()
+      #display(exps_to_remove); println()
+    end 
+    for iexp in exps_to_remove
+      push!(exp_cc, iexp)
+    end
+    filter!(!isempty, exp_cc)
+    #display(exp_cc); println()
+    #display(exps_to_remove); println()
+ 
+    #println()
+    #println("#== COEFFICIENTS ==#")   
+    coeff_cc::Vector{Vector{Float64}} = [ deepcopy(icoef) for icoef in coeffs ]
+    coeffs_to_remove::Vector{Vector{Float64}} = [] 
+    for (coef_idx, icoef_cc) in enumerate(coeff_cc), idx in idx_to_remove
+      if typeof(coefs_01[coef_idx]) == Nothing 
+        push!(coeffs_to_remove, [ icoef_cc[coefs_01[idx]] ])
+        deleteat!(icoef_cc, coefs_01[idx])
+      elseif typeof(coefs_01[coef_idx]) == Int64 
+        filter!(x->x==1.0, icoef_cc)
+      end 
+      #display(icoef_cc); println()
+      #display(coeffs_to_remove); println()
+    end 
+    for icoeff in coeffs_to_remove
+      push!(coeff_cc, icoeff)
+    end
+    #filter!(!isempty, coeff_cc)
+    #display(coeff_cc); println()
+    #display(coeffs_to_remove); println()
+   
+    exp_id = 1
+    for coef_id in 1:length(coefs_01) 
+      if (length(coefs_01) > 1) && (typeof(coefs_01[coef_id]) == Int64)
+        exp_id += 1
+      end
 
-  end #for coeffs 
-  shell_num_offset -= 1
-
+      h5write("bsed.h5",
+        "$atomid/$basis/$shell_num/Shell Type", shell_type_string)
+      h5write("bsed.h5",
+        "$atomid/$basis/$shell_num/Exponents", exp_cc[exp_id])
+      h5write("bsed.h5",
+        "$atomid/$basis/$shell_num/Coefficients", coeff_cc[coef_id])
+      shell_num += 1
+    end #for icoef
   end #for shells
-  #end # if
+  
+  println("#==========================================#")
+  println("#== FINAL LIST OF EXPONENTS/COEFFICIENTS ==#") 
+  println("#==========================================#")
+  for ishl in 1:(shell_num-1)
+    println("Shell Type $atomid/$basis/$ishl:")
+    display(h5read("bsed.h5",
+      "$atomid/$basis/$ishl/Shell Type"))
+    println()
+    println("Exponents $atomid/$basis/$ishl:")
+    display(h5read("bsed.h5",
+      "$atomid/$basis/$ishl/Exponents"))
+    println()
+    println("Contraction Coefficients $atomid/$basis/$ishl:")
+    display(h5read("bsed.h5",
+      "$atomid/$basis/$ishl/Coefficients"))
+    println()
+  end
+  end # if
 end #function
 
 #===========================================#
@@ -238,7 +281,7 @@ function parse_all()
             bs_dict_json = JSON.parse(bs_dict)
 
             for atom in bs_dict_json["elements"] 
-              parse_individual_cc(atom.second, atoms[parse(Int64,atom.first)], 
+              parse_individual_cc_new(atom.second, atoms[parse(Int64,atom.first)], 
                 basis, bsed)
             end
         end
