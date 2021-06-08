@@ -270,7 +270,7 @@ function parse_all()
         end
 
         #== parse correlation-consistent basis family ==#
-        basis_sets = ["cc-pVDZ", "cc-pVTZ"] 
+        basis_sets = ["cc-pVDZ", "aug-cc-pVDZ", "cc-pVTZ", "aug-cc-pVTZ"] 
         
         for basis::String in basis_sets
             println("Basis: $basis")
