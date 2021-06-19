@@ -52,7 +52,8 @@ status_eatom = h5open("eatom.h5","w") do eatom
     pair_regex = match(r"(.*)/(.*)", pair)
     symbol = pair_regex.captures[1]
     basis = pair_regex.captures[2]
- 
+
+    if symbol == "H"  
     println("$symbol/$basis")
     
     try 
@@ -86,6 +87,7 @@ status_eatom = h5open("eatom.h5","w") do eatom
       println(msg)       
       continue
     end
+    end
   end
 
   #== rhf energies ==#
@@ -98,6 +100,7 @@ status_eatom = h5open("eatom.h5","w") do eatom
  
     println("$symbol/$basis")
     
+    if symbol == "H"
     try 
       geom = psi4.geometry("""
         $symbol  0.0 0.0 0.0         
@@ -126,6 +129,7 @@ status_eatom = h5open("eatom.h5","w") do eatom
       msg = sprint(showerror, e, bt)                                              
       println(msg)       
       continue
+    end
     end
   end
 end
